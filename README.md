@@ -1,4 +1,4 @@
-# DroneScript Lexer - Analizador Léxico Académico
+# DroneScript - Analizador Léxico
 
 <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python 3.8+">
 <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Active">
