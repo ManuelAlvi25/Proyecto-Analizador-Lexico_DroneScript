@@ -1,12 +1,25 @@
 # DroneScript Lexer - Analizador Léxico Académico
 
 <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python 3.8+">
-<img src="https://img.shields.io/badge/License-Academic-green" alt="Academic Project">
 <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Active">
 
-## 📋 Descripción del Proyecto
+# Informacion del curso 
+Materia:Programacion de sistemas de base 1
+Institucion:Universidad autonoma de tamaulipas-Facultad de ingenieria tampico
+Semestre:2026-1
+Profesor:Muñoz Quintero Dante Adolfo
 
-**DroneScript Lexer** es un **analizador léxico completo** para un lenguaje personalizado de control de drones y robots autónomos llamado **DroneScript**. Este proyecto fue desarrollado como parte de un curso de **Compiladores/Análisis Léxico** con un enfoque académico y profesional.
+- Integrantes del equipo
+# Torres Alvineda Manuel de jesus 
+- 2223330201
+# Turrubiates Mejia Gilberto
+- 2223330202
+# Vega Anguiano Alexa Fernanda
+- 2173330004
+
+## 📋 Descripción del Lenguaje
+
+**DroneScript Lexer** es un **analizador léxico completo** para un lenguaje personalizado de control de drones y robots autónomos llamado **DroneScript**. Este proyecto fue desarrollado como parte de un curso de **Programacion de sistemas de base 1** con un enfoque académico y profesional.
 
 El proyecto implementa:
 - ✅ **Análisis léxico robusto** que convierte código fuente en tokens
@@ -20,7 +33,7 @@ El proyecto implementa:
 
 ## 🎯 Características Principales
 
-### 1. Reconocimiento de Tokens
+### 1. Tokens Reconocidos
 - **Palabras clave**: 127 palabras reservadas categorizadas semánticamente
 - **Identificadores**: Válidos e inválidos con validación de formato
 - **Números**: Enteros y flotantes
@@ -140,36 +153,36 @@ DELIMITER | ;         | 2    | 10  | DELIMITER_PUNCTUATION
 
 ## 📚 Uso
 
-### Uso Básico
+### Como Ejecutar
 
 ```bash
 # Analizar un archivo simple
-python src/main.py tests/valid/simple.drs
+python -m src.main tests/valid/simple.drs
 
 # Salida en formato JSON
-python src/main.py tests/valid/simple.drs --format json
+python -m src.main tests/valid/simple.drs --format json
 
 # Salida simple
-python src/main.py tests/valid/simple.drs --format simple
+python -m src.main tests/valid/simple.drs --format simple
 ```
 
 ### Opciones Avanzadas
 
 ```bash
 # Ver solo errores
-python src/main.py tests/invalid/unknown_chars.drs --errors-only
+python -m src.main tests/invalid/unknown_chars.drs --errors-only
 
 # Ver solo tokens
-python src/main.py tests/valid/complex.drs --tokens-only
+python -m src.main tests/valid/complex.drs --tokens-only
 
 # Modo verbose (información detallada)
-python src/main.py tests/valid/complex.drs --verbose
+python -m src.main tests/valid/complex.drs --verbose
 
 # Guardar salida en archivo
-python src/main.py tests/valid/simple.drs --output output/tokens.txt
+python -m src.main tests/valid/simple.drs --output output/tokens.txt
 
 # Combinaciones
-python src/main.py tests/valid/complex.drs --format json --output output/tokens.json
+python -m src.main tests/valid/complex.drs --format json --output output/tokens.json
 ```
 
 ### Ayuda de CLI
@@ -196,7 +209,6 @@ DroneScript-Lexer/
 │
 ├── 📁 grammar/
 │   ├── DroneScript.g4                    # Gramática ANTLR4 (especificación formal)
-│   └── README.md                         # Documentación de la gramática
 │
 ├── 📁 tests/
 │   ├── valid/                            # Casos de prueba válidos
@@ -342,32 +354,32 @@ python_code = transpiler.transpile()
 
 ```bash
 # Ejemplo simple
-python src/main.py tests/valid/simple.drs
+python -m src.main tests/valid/simple.drs
 
 # Ejemplo con movimiento
-python src/main.py tests/valid/movement.drs
+python -m src.main tests/valid/movement.drs
 
 # Ejemplo complejo
-python src/main.py tests/valid/complex.drs
+python -m src.main tests/valid/complex.drs
 
 # Todas las palabras clave
-python src/main.py tests/valid/all_keywords.drs
+python -m src.main tests/valid/all_keywords.drs
 ```
 
 ### Ejecutar Casos de Prueba Inválidos (con errores)
 
 ```bash
 # Caracteres desconocidos
-python src/main.py tests/invalid/unknown_chars.drs
+python -m src.main tests/invalid/unknown_chars.drs
 
 # Strings no cerrados
-python src/main.py tests/invalid/broken_strings.drs
+python -m src.main tests/invalid/broken_strings.drs
 
 # Comentarios no cerrados
-python src/main.py tests/invalid/broken_comments.drs
+python -m src.main tests/invalid/broken_comments.drs
 
 # Múltiples errores
-python src/main.py tests/invalid/mixed_errors.drs
+python -m src.main tests/invalid/mixed_errors.drs
 ```
 
 ### Verificación de Cobertura
@@ -455,7 +467,7 @@ Código fuente (.drs)
 
 ## 🎓 Propósito Académico
 
-Este proyecto fue desarrollado como **proyecto de laboratorio** para un curso de **Compiladores e Análisis Léxico** con los siguientes objetivos académicos:
+Este proyecto fue desarrollado como **Proyecto Integrador* para un curso de **Programacion de sistemas de base 1** con los siguientes objetivos académicos:
 
 1. ✅ Entender fases del proceso de compilación (léxica, sintáctica, semántica)
 2. ✅ Implementar un analizador léxico completo desde cero
@@ -509,35 +521,3 @@ Este proyecto fue desarrollado como **proyecto de laboratorio** para un curso de
    - Línea y columna precisas
    - Compatible con herramientas posteriores
 
-## 🤝 Contribución
-
-Este es un proyecto académico. Para mejoras o extensiones:
-
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/amazing-feature`)
-3. Commit tus cambios (`git commit -m 'Add amazing feature'`)
-4. Push a la rama (`git push origin feature/amazing-feature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto es parte del curso académico de Compiladores. Uso libre para propósitos educativos.
-
-## 📧 Autor
-
-Proyecto Académico - Compiladores/Análisis Léxico
-Curso: Compiladores
-Institución: [Tu Institución]
-Año: 2026
-
-## 🙏 Agradecimientos
-
-- Profesor/a de Compiladores por los requisitos y orientación
-- Comunidad ANTLR por la especificación formal
-- Python por la librería estándar excelente
-
----
-
-**Última actualización**: 17 de mayo de 2026
-
-Para más información, consulta el archivo [grammar/README.md](grammar/README.md) para detalles sobre la gramática ANTLR.
