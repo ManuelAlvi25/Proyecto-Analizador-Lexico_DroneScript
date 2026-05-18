@@ -1,0 +1,31 @@
+// Archivo complex.drs - Ejemplo complejo con múltiples tipos de token
+
+/* 
+  Ejemplo más complejo que incluye:
+  - Strings
+  - Números enteros y flotantes
+  - Comentarios de bloque
+  - Operadores
+  - Condicionales
+*/
+
+iniciar_mision;
+coordenada latitud = 40.7128;
+coordenada longitud = -74.0060;
+
+si bateria > 50 entonces
+    mover norte 100;
+    activar_camara;
+    tomar_foto;
+fino;
+
+destino = "Nueva York";
+velocidad = 3.5;
+sensor_distancia escanear;
+
+mientras bateria > 10 hacer
+    patrullar;
+fin;
+
+regresar_base;
+aterrizar;

@@ -1,0 +1,6 @@
+// Archivo con caracteres desconocidos
+
+despegar;
+mover norte 10#;
+rotar @90;
+aterrizar$;

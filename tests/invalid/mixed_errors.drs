@@ -1,0 +1,9 @@
+// Archivo con múltiples errores
+
+despegar;
+mover #norte 10;
+nombre = "Mexico;
+/* comentario sin cerrar
+rotar @90;
+mensaje = 'invalid string;
+aterrizar$;

@@ -1,0 +1,156 @@
+// Archivo all_keywords.drs - Prueba de todas las palabras clave
+
+// Palabras clave de CONTROL
+despegar;
+aterrizar;
+iniciar_mision;
+finalizar_mision;
+pausar_mision;
+reanudar_mision;
+regresar_base;
+apagar;
+reiniciar;
+detener;
+emergencia;
+
+// Palabras clave de MOVIMIENTO
+mover;
+avanzar;
+retroceder;
+subir;
+bajar;
+rotar;
+acelerar;
+frenar;
+mantener_altura;
+orbitar;
+seguir_objetivo;
+
+// Palabras clave de DIRECCIÓN
+norte;
+sur;
+este;
+oeste;
+noreste;
+noroeste;
+sureste;
+suroeste;
+arriba;
+abajo;
+izquierda;
+derecha;
+
+// Palabras clave de GPS
+coordenada;
+gps;
+latitud;
+longitud;
+destino;
+ruta;
+waypoint;
+navegar;
+ir_a;
+guardar_ruta;
+cargar_ruta;
+
+// Palabras clave de SENSORES
+escanear;
+sensor_distancia;
+sensor_temperatura;
+sensor_humedad;
+sensor_gas;
+sensor_ultrasonico;
+sensor_proximidad;
+sensor_luz;
+lidar;
+camara_termica;
+giroscopio;
+acelerometro;
+
+// Palabras clave de CÁMARA
+activar_camara;
+desactivar_camara;
+tomar_foto;
+grabar_video;
+detener_video;
+zoom;
+enfocar;
+reconocer_objeto;
+detectar_persona;
+seguir_movimiento;
+
+// Palabras clave de BATERÍA
+bateria;
+energia;
+cargar;
+nivel_bateria;
+ahorro_energia;
+temperatura_motor;
+
+// Palabras clave de CONDICIONALES
+si;
+entonces;
+sino;
+fin;
+mientras;
+hacer;
+repetir;
+veces;
+para;
+desde;
+hasta;
+incrementar;
+
+// Palabras clave de COMUNICACIÓN
+conectar;
+desconectar;
+transmitir;
+recibir;
+enviar_datos;
+recibir_datos;
+wifi;
+bluetooth;
+radio;
+
+// Palabras clave de SEGURIDAD
+autenticar;
+bloquear;
+desbloquear;
+activar_alarma;
+desactivar_alarma;
+zona_segura;
+evitar_colision;
+
+// Palabras clave de ENTORNO
+viento;
+lluvia;
+temperatura;
+humedad;
+presion;
+detectar_obstaculo;
+
+// Palabras clave de IA
+modo_autonomo;
+aprendizaje;
+objetivo;
+patrullar;
+explorar;
+mapear;
+reconocer_rostro;
+evitar_obstaculo;
+
+// Palabras clave de TIPOS DE DATOS
+entero;
+decimal;
+texto;
+booleano;
+verdadero;
+falso;
+
+// Palabras clave de EVENTOS
+al_detectar;
+al_colisionar;
+al_bateria_baja;
+al_perder_senal;
+al_iniciar;
+al_aterrizar;

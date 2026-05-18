@@ -1,0 +1,7 @@
+// Archivo con strings no cerrados
+
+despegar;
+nombre = "New York;
+activar_camara;
+mensaje = "Error en string;
+aterrizar;

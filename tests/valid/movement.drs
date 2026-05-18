@@ -1,0 +1,10 @@
+// Archivo movement.drs - Comandos de movimiento
+
+mover norte 10;
+rotar 90;
+subir 50;
+bajar 25;
+avanzar;
+retroceder;
+acelerar 100;
+frenar;
