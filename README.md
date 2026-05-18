@@ -509,35 +509,10 @@ Este proyecto fue desarrollado como **proyecto de laboratorio** para un curso de
    - Línea y columna precisas
    - Compatible con herramientas posteriores
 
-## 🤝 Contribución
-
-Este es un proyecto académico. Para mejoras o extensiones:
-
 1. Fork el repositorio
 2. Crea una rama para tu feature (`git checkout -b feature/amazing-feature`)
 3. Commit tus cambios (`git commit -m 'Add amazing feature'`)
 4. Push a la rama (`git push origin feature/amazing-feature`)
 5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto es parte del curso académico de Compiladores. Uso libre para propósitos educativos.
-
-## 📧 Autor
-
-Proyecto Académico - Compiladores/Análisis Léxico
-Curso: Compiladores
-Institución: [Tu Institución]
-Año: 2026
-
-## 🙏 Agradecimientos
-
-- Profesor/a de Compiladores por los requisitos y orientación
-- Comunidad ANTLR por la especificación formal
-- Python por la librería estándar excelente
-
----
-
-**Última actualización**: 17 de mayo de 2026
 
 Para más información, consulta el archivo [grammar/README.md](grammar/README.md) para detalles sobre la gramática ANTLR.
