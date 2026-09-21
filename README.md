@@ -521,3 +521,55 @@ Este proyecto fue desarrollado como **Proyecto Integrador* para un curso de **Pr
    - Línea y columna precisas
    - Compatible con herramientas posteriores
 
+Diagrama de secuencia 
+
+sequenceDiagram
+    autonumber
+    actor Usuario
+    participant Main as main.py (CLI)
+    participant Lexer as lexer.py (DroneLexer)
+    participant Support as utils/tokens/errors
+    participant Parser as parser.py (DroneParser)
+
+    Usuario->>Main: Ejecuta comando (ej. python -m src.main script.drs)
+    activate Main
+    
+    Main->>Lexer: DroneLexer(source_code, filename)
+    activate Lexer
+    
+    Lexer->>Support: Inicializa ErrorCollector y lista de Tokens
+    activate Support
+    Support-->>Lexer: Estructuras preparadas
+    deactivate Support
+    
+    Main->>Lexer: tokenize()
+    
+    loop Lectura carácter a carácter
+        Lexer->>Support: Consulta validadores y mapeos (utils)
+        alt Token válido
+            Lexer->>Support: Crea instancia Token y categoriza
+        else Carácter inválido
+            Lexer->>Support: Registra fallo en ErrorCollector
+        end
+    end
+    
+    Lexer-->>Main: Retorna [Lista de Tokens] y [ErrorCollector]
+    deactivate Lexer
+    
+    alt Hay errores léxicos críticos
+        Main-->>Usuario: Muestra reporte de errores
+    else Análisis Léxico exitoso
+        Main->>Parser: DroneParser(tokens) (Fase 2)
+        activate Parser
+        
+        Main->>Parser: parse()
+        Note over Parser: Aplica lógica ASDP (LL(1))<br/>y Modo Pánico si hay fallos
+        Parser-->>Main: Retorna Árbol Sintáctico (AST)
+        deactivate Parser
+        
+        Main-->>Usuario: Muestra formato de salida final y estructura del AST
+    end
+    deactivate Main
+
+
+    
